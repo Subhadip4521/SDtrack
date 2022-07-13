@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url("3d-gray-background-product-display-podium-scene-with-leaf-geometric-platform-grey-background-3d-render-with-podium-stand-to-show-cosmetic-product-stage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    }
+
+/* ------------------------------------------------------------------- */
+.glow{
+    /* width: 250px;
+    height: 100px;
+    background: yellow; */
+    /* border: 2px dashed blue; */
+    /* font-size: 20px; */
+    /* text-align: center; */
+    animation: hideMe 3s forwards;
+}
+@keyframes hideMe{
+    0%{
+        opacity: 0;
+    }
+    /* 33%{
+        opacity: 0.33;
+    }
+    66%{
+        opacity: 0.66;
+    } */
+    100%{
+        opacity:1;
+    }
+}
+
+button a{
+    color: black;
+}
+
+footer a{
+    cursor: pointer;
+}
+

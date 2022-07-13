@@ -1,0 +1,27 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(20, 22, 21);
+    color: rgb(210, 226, 226);
+    text-decoration: none;
+}
+body{
+    background-color: rgb(63, 59, 55);
+    }
+
+/* ------------------------------------------------------------------- */
+
+button a{
+    color: black;
+}
+
+footer a{
+    cursor: pointer;
+}
+
+
+
