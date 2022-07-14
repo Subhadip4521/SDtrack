@@ -9,12 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet" href="feestracker.css">
+<link rel="stylesheet" href="todo.css">
     <title>SD Track-track everything at a place</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand">SD Track</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto justify-content-center">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="dashboard.html">Home
                         <!-- <span class="sr-only">(current)</span> -->
                     </a>
@@ -51,13 +51,15 @@
                     <a class="nav-link" href="contact.html">Contact us</a>
                 </li>
             </ul>
-            </div>
+            
+            
+        </div>
         <ul class="nav justify-content-end mx-5 px-5"> 
             <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false" style="color:rgb(0, 0, 0); font-size: 25px;" href="#">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false" style="color:rgb(245, 203, 245); font-size: 25px;" href="#">
                   Dashboard
                 </a>
-                <div class="dropdown-menu" style="background-color: #A7FFF9;">
+                <div class="dropdown-menu" style="background-color: #f2dcef;">
                     <a class="dropdown-item" href="todo.html">Your profile</a>
                     <a class="dropdown-item" href="feestracker.html">Products overview</a>
                     <div class="dropdown-divider"></div>
@@ -69,12 +71,13 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Sign out</a>
                     <br><br>
-                    <p class="dropdown-item" ><a href="#" style="color:rgb(24, 24, 200)">Privacy policies</a> &copy;SD Track 2022</p>
+                    <p class="dropdown-item" ><a href="#">Privacy policies</a> &copy;SD Track 2022</p>
                     </div>
               </div>
           </ul>
     </nav>
 
+    
 
 
     <main class="my-5">
@@ -82,29 +85,29 @@
             <div class="row">
                 
     <div class="col-lg-5">
-        <h2 class="text-center"><u>Fees Tracker</u></h2>
+        <h2 class="text-center"><u>To Do List</u></h2>
          <div class="my-5">
             <div class="form-group">
-                <label for="title">Name</label>
+                <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">Add the name of the student</small>
+                <small id="emailHelp" class="form-text text-muted">Add a title here</small>
             </div>
             <div class="form-group">
                 <label for="title">Date</label>
                 <input type="date" class="form-control" id="date" aria-describedby="emailHelp">
             </div>
             <div class="form-group">
-                <label for="title">Amount</label>
-                <input type="number" class="form-control" id="amount" aria-describedby="emailHelp">
+                <label for="title">Day</label>
+                <input type="text" class="form-control" id="day" aria-describedby="emailHelp">
             </div>
 
             <div class="form-group">
-                <label for="description">Description / Pointer</label>
+                <label for="description">Description</label>
                 <textarea class="form-control" id="description" rows="3"></textarea>
             </div>
             
 
-            <button   id="add" class="btn btn-primary">Add Fees</button>
+            <button   id="add" class="btn btn-primary">Add to list</button>
             <button  id="clear" class="btn btn-primary" onclick="clearStorage()">Clear list</button>
         </div>
 
@@ -113,16 +116,16 @@
     <div class="col-lg-1"></div>
     <div class="col-lg-6">
         <div id="items">
-            <h2><u>Fees Paid By : -</u></h2>
+            <h2><u>Your To Dos :-</u></h2>
             <br>
             <table class="table">
                 <thead>
                   <tr>
                     <th scope="col">Sl.No</th>
-                    <th scope="col">Name</th>
+                    <th scope="col">Title</th>
                     <th scope="col">Date</th>
-                    <th scope="col">Amount</th>
-                    <th scope="col">Description/pointer</th> 
+                    <th scope="col">Day</th>
+                    <th scope="col">Description</th> 
                     <th scope="col">Actions</th> 
                   </tr>
                 </thead>
@@ -144,8 +147,8 @@
 </div>
 </main>
 
-<footer style="background-color:rgb(28, 42, 37);">
-    <div class="container p-3" style=" color:aliceblue;">
+<footer style="background-color:#5e1054;">
+    <div class="container p-3" style=" color:rgb(255, 255, 255);">
         <h5>SD Track</h5>
         <p>It is all in one solution website for the teachers and the students to track their todo list, fees,
             scorecard. Also it is a learning community where teachers and students can interact with each other
@@ -178,17 +181,17 @@
                 tit = document.getElementById('title').value;
                 desc = document.getElementById('description').value;
                 date = document.getElementById('date').value;
-                amount = document.getElementById('amount').value;
+                day = document.getElementById('day').value;
                 
                 if (localStorage.getItem('itemsJson')==null){
                     itemJsonArray = [];
-                    itemJsonArray.push([tit, date, amount, desc]);
+                    itemJsonArray.push([tit, date, day, desc]);
                     localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
                 }
                 else{
                     itemJsonArrayStr = localStorage.getItem('itemsJson')
                     itemJsonArray = JSON.parse(itemJsonArrayStr);
-                    itemJsonArray.push([tit, date, amount, desc]);
+                    itemJsonArray.push([tit, date, day, desc]);
                     localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
                 }
                 update();

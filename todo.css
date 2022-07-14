@@ -5,16 +5,17 @@
 }
 
 nav{
-    /* background-color: #FEFFAA;
-    color: rgb(0, 0, 0); */
+    background-color: #5e1054;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 body{
-    background-image:url("Untitled.png");
+    /* background-image:url("Untitled.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: rgb(205, 168, 240);
     }
 
 /* ------------------------------------------------------------------- */

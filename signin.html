@@ -32,7 +32,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">To Do List</a>
-                <a class="dropdown-item" href="#">Fees tracker</a>
+                <a class="dropdown-item" href="#">Fees tracker (admin version)</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Community</a>
                 <div class="dropdown-divider"></div>
@@ -45,7 +45,7 @@
               <a class="nav-link" href="contact.html">Contact us</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0 mx-2">
+          <form class="form-inline my-2 my-lg-0">
             <a href="signup.html" style="text-decoration:none"><button type="button" class="btn btn-warning">Sign up</button></a>
           </form>
         </div>
@@ -63,6 +63,7 @@
                     <div class="form-group">
                       <label for="exampleFormControlSelect1">Designation</label>
                       <select class="form-control" id="exampleFormControlSelect1">
+                        <option disabled selected>Choose designation</option>
                         <option>Teacher</option>
                         <option>Student</option>
                         <option>Parents</option>
@@ -76,6 +77,14 @@
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
+                  <div class="my-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                      <label class="form-check-label" for="autoSizingCheck2">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
                   <a href="dashboard.html"><button type="button" class="btn btn-success">Sign in</button></a>
                   <p style="text-align:center;">or</p>
                   <button type="button" class="btn btn-danger btn-lg btn-block">Continue with GOOGLE</button>
@@ -88,8 +97,8 @@
         </div>
       </main>
       
-      <footer style="background-color:rgb(28, 42, 37);" class="flex">
-        <div class="container m-2 p-2" style=" color:aliceblue;">
+      <footer style="background-color:rgb(28, 42, 37);">
+        <div class="container p-5" style=" color:aliceblue;">
           <h5>SD Track</h5>
           <p>It is all in one solution website for the teachers and the students to track their todo list, fees, scorecard. Also it is a learning community where teachers and students can interact with each other conviniently.</p>
           <h6>Follow us on</h6>

@@ -32,7 +32,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">To Do List</a>
-                <a class="dropdown-item" href="#">Fees tracker</a>
+                <a class="dropdown-item" href="#">Fees tracker (admin version)</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Community</a>
                 <div class="dropdown-divider"></div>
@@ -69,6 +69,7 @@
                     <div class="form-group">
                       <label for="exampleFormControlSelect1">Designation</label>
                       <select class="form-control" id="exampleFormControlSelect1">
+                        <option disabled selected>Choose designation</option>
                         <option>Teacher</option>
                         <option>Student</option>
                         <option>Parents</option>
@@ -86,8 +87,14 @@
                   <p style="text-align:center;">or</p>
                   <button type="button" class="btn btn-danger btn-lg btn-block">Continue with GOOGLE</button>
                   <button type="button" class="btn btn-primary btn-lg btn-block">Continue with FACEBOOK</button>
+                  <div class="form-check my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      I am accepting the <a href="#" style="color: rgb(3, 3, 152)">privacy policies</a>.
+                    </label>
+                  </div>
                   <br>
-                  <p>Already a user? <a href="signin.html">Sign in</a></p>
+                  <p>Already a user? <a href="signin.html" style="color: rgb(3, 3, 152)">Sign in</a></p>
                 </form>
               </div>
               <div class="col-lg-4">
@@ -96,9 +103,9 @@
             </div>
         </div>
       </main>
-      
-      <footer style="background-color:rgb(28, 42, 37);" class="flex">
-        <div class="container m-2 p-2" style=" color:aliceblue;">
+      <br>
+      <footer style="background-color:rgb(28, 42, 37);">
+        <div class="container p-5" style=" color:aliceblue;">
           <h5>SD Track</h5>
           <p>It is all in one solution website for the teachers and the students to track their todo list, fees, scorecard. Also it is a learning community where teachers and students can interact with each other conviniently.</p>
           <h6>Follow us on</h6>
