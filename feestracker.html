@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet" href="feestracker.css">
+    <link rel="stylesheet" href="feestracker.css">
     <title>SD Track-track everything at a place</title>
 </head>
 
@@ -51,11 +51,12 @@
                     <a class="nav-link" href="contact.html">Contact us</a>
                 </li>
             </ul>
-            </div>
-        <ul class="nav justify-content-end mx-5 px-5"> 
+        </div>
+        <ul class="nav justify-content-end mx-5 px-5">
             <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false" style="color:rgb(0, 0, 0); font-size: 25px;" href="#">
-                  Dashboard
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false"
+                    style="color:rgb(0, 0, 0); font-size: 25px;" href="#">
+                    Dashboard
                 </a>
                 <div class="dropdown-menu" style="background-color: #c6faf8;">
                     <a class="dropdown-item" href="todo.html">Your profile</a>
@@ -69,10 +70,11 @@
                     <div class="dropdown-divider"></div>
                     <br><br>
                     <a class="dropdown-item" href="#">Sign out</a>
-                    <p class="dropdown-item" ><a href="#" style="color:rgb(24, 24, 200)">Privacy policies</a> &copy;SD Track 2022</p>
-                    </div>
-              </div>
-          </ul>
+                    <p class="dropdown-item"><a href="#" style="color:rgb(24, 24, 200)">Privacy policies</a> &copy;SD
+                        Track 2022</p>
+                </div>
+            </div>
+        </ul>
     </nav>
 
 
@@ -80,172 +82,172 @@
     <main class="my-5">
         <div class="container">
             <div class="row">
-                
-    <div class="glow col-lg-4">
-        <h2 class="text-center"><u>Fees Tracker</u></h2>
-         <div class="my-5">
-            <div class="form-group">
-                <label for="title">Code</label>
-                <input type="number" class="form-control" id="unicode" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group">
-                <label for="title">Name</label>
-                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">Add the name of the student</small>
-            </div>
-            <div class="form-group">
-                <label for="title">Date</label>
-                <input type="date" class="form-control" id="date" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group">
-                <label for="title">Amount</label>
-                <input type="number" class="form-control" id="amount" aria-describedby="emailHelp">
-            </div>
 
-            <div class="form-group">
-                <label for="description">Description / Pointer</label>
-                <textarea class="form-control" id="description" rows="3"></textarea>
-            </div>
-            
+                <div class="glow col-lg-4">
+                    <h2 class="text-center"><u>Fees Tracker</u></h2>
+                    <div class="my-5">
+                        <div class="form-group">
+                            <label for="title">Code</label>
+                            <input type="number" class="form-control" id="unicode" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Name</label>
+                            <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">Add the name of the student</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Date</label>
+                            <input type="date" class="form-control" id="date" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Amount</label>
+                            <input type="number" class="form-control" id="amount" aria-describedby="emailHelp">
+                        </div>
 
-            <button   id="add" class="btn btn-primary">Add Fees</button>
-            <button  id="clear" class="btn btn-primary" onclick="clearStorage()">Clear list</button>
-        </div>
+                        <div class="form-group">
+                            <label for="description">Description / Pointer</label>
+                            <textarea class="form-control" id="description" rows="3"></textarea>
+                        </div>
 
-        
-    </div>
-    <div class="glow col-lg-2"></div>
-    <div class="glow col-lg-6">
-        <div id="items">
-            <h2><u>Fees Paid By : -</u></h2>
-            <br>
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Sl.No</th>
-                    <th scope="col">Code</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Amount</th>
-                    <th scope="col">Description/pointer</th> 
-                    <th scope="col">Actions</th> 
-                  </tr>
-                </thead>
-                <tbody id="tableBody">
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>SD</td>
-                    <td>SD</td>
-                    <td>SD</td>
-                    <td>SD</td>
-                    <td>SD</td>
-                    <td><button class="btn btn-sm btn-primary">Delete</button></td> 
-                  </tr>
-                  
-                </tbody>
-              </table>
-        </div>
-    </div>
-</div>
-</div>
-</main>
 
-<footer style="background-color:rgb(28, 42, 37);">
-    <div class="mx-5 py-5" style=" color:aliceblue;">
-      <div class="row">
-        <div class="col-lg-6">
-          <h5 style="font-size: 35px;">SD Track</h5>
-      <p>It is all in one solution website for the teachers and the students to track their todo list, fees, scorecard. Also it is a learning community where teachers and students can interact with each other conviniently.</p>
-      <h6>Follow us on</h6>
-      <a href="#"><img src="download.png" alt="" style="width:44px"></a>
-      <a href="#"><img src="download (2).jpg" alt="" style="width:44px"></a>
-      <a href="#"><img src="download (1).png" alt="" style="width:30px"></a>
-      
+                        <button id="add" class="btn btn-primary">Add Fees</button>
+                        <button id="clear" class="btn btn-primary" onclick="clearStorage()">Clear list</button>
+                    </div>
+
+
+                </div>
+                <div class="glow col-lg-2"></div>
+                <div class="glow col-lg-6">
+                    <div id="items">
+                        <h2><u>Fees Paid By : -</u></h2>
+                        <br>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sl.No</th>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Description/pointer</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>SD</td>
+                                    <td>SD</td>
+                                    <td>SD</td>
+                                    <td>SD</td>
+                                    <td>SD</td>
+                                    <td><button class="btn btn-sm btn-primary">Delete</button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="glow col-lg-6">
-          <div class="row">
-            <div class="glow col-lg-4">
-              <h6 style="font-size: 25px;">Products</h6>
-              <br>
-              <p><a href="#" style="color: white;">To Do List</a></p>
-              <p><a href="#" style="color: white;">Fees tracker</a></p>
-              <p><a href="#" style="color: white;">Community</a></p>
+    </main>
+
+    <footer style="background-color:rgb(28, 42, 37);">
+        <div class="mx-5 py-5" style=" color:aliceblue;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 style="font-size: 35px;">SD Track</h5>
+                    <p>It is all in one solution website for the teachers and the students to track their todo list,
+                        fees, scorecard. Also it is a learning community where teachers and students can interact with
+                        each other conviniently.</p>
+                    <h6>Follow us on</h6>
+                    <a href="#"><img src="img/download.png" alt="" style="width:44px"></a>
+                    <a href="#"><img src="img/download (2).jpg" alt="" style="width:44px"></a>
+                    <a href="#"><img src="img/download (1).png" alt="" style="width:30px"></a>
+
+                </div>
+                <div class="glow col-lg-6">
+                    <div class="row">
+                        <div class="glow col-lg-4">
+                            <h6 style="font-size: 25px;">Products</h6>
+                            <br>
+                            <p><a href="#" style="color: white;">To Do List</a></p>
+                            <p><a href="#" style="color: white;">Fees tracker</a></p>
+                            <p><a href="#" style="color: white;">Community</a></p>
+                        </div>
+                        <div class="glow col-lg-4">
+                            <h6 style="font-size: 25px;">Company</h6>
+                            <br>
+                            <p><a href="#" style="color: white;">About us</a></p>
+                            <p><a href="#" style="color: white;">Contact us</a></p>
+                            <p><a href="#" style="color: white;">Blogs</a></p>
+                            <p><a href="#" style="color: white;">FAQs</a></p>
+                        </div>
+                        <div class="glow col-lg-4">
+                            <h6 style="font-size: 25px;">Legal</h6>
+                            <br>
+                            <p><a href="#" style="color: white;">Disclaimer</a></p>
+                            <p><a href="#" style="color: white;">Privacy policies</a></p>
+                            <p><a href="#" style="color: white;">Terms and conditions</a></p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="glow col-lg-4">
-              <h6 style="font-size: 25px;">Company</h6>
-              <br>
-              <p><a href="#" style="color: white;">About us</a></p>
-              <p><a href="#" style="color: white;">Contact us</a></p>
-              <p><a href="#" style="color: white;">Blogs</a></p>
-              <p><a href="#" style="color: white;">FAQs</a></p>
-            </div>
-            <div class="glow col-lg-4">
-              <h6 style="font-size: 25px;">Legal</h6>
-              <br>
-              <p><a href="#" style="color: white;">Disclaimer</a></p>
-              <p><a href="#" style="color: white;">Privacy policies</a></p>
-              <p><a href="#" style="color: white;">Terms and conditions</a></p>
-            </div>
-          </div>
-        </div>
-      
-    </div>
-    <br><br>
-    <hr>
-      <p style="text-align: center;">&copy;SD Track 2022. All rights reserved.</p>
-  </footer>
+            <br><br>
+            <hr>
+            <p style="text-align: center;">&copy;SD Track 2022. All rights reserved.</p>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
 
 
-        <script>
-            function getAndUpdate(){
-                console.log("Updating List...");
-                
-                uni = document.getElementById('unicode').value;
-                tit = document.getElementById('title').value;
-                desc = document.getElementById('description').value;
-                date = document.getElementById('date').value;
-                amount = document.getElementById('amount').value;
-                
-                if (localStorage.getItem('itemsJson')==null){
-                    itemJsonArray = [];
-                    itemJsonArray.push([uni, tit, date, amount, desc]);
-                    localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
-                }
-                else{
-                    itemJsonArrayStr = localStorage.getItem('itemsJson')
-                    itemJsonArray = JSON.parse(itemJsonArrayStr);
-                    itemJsonArray.push([uni, tit, date, amount, desc]);
-                    localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
-                }
-                update();
+    <script>
+        function getAndUpdate() {
+            console.log("Updating List...");
+
+            uni = document.getElementById('unicode').value;
+            tit = document.getElementById('title').value;
+            desc = document.getElementById('description').value;
+            date = document.getElementById('date').value;
+            amount = document.getElementById('amount').value;
+
+            if (localStorage.getItem('itemsJson') == null) {
+                itemJsonArray = [];
+                itemJsonArray.push([uni, tit, date, amount, desc]);
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+            } else {
+                itemJsonArrayStr = localStorage.getItem('itemsJson')
+                itemJsonArray = JSON.parse(itemJsonArrayStr);
+                itemJsonArray.push([uni, tit, date, amount, desc]);
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
             }
+            update();
+        }
 
-            function update(){
-                if (localStorage.getItem('itemsJson')==null){
-                    itemJsonArray = []; 
-                    localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
-                } 
-                else{
-                    itemJsonArrayStr = localStorage.getItem('itemsJson')
-                    itemJsonArray = JSON.parse(itemJsonArrayStr); 
-                }
-                // Populate the table
-                let tableBody = document.getElementById("tableBody");
-                let str = "";
-                itemJsonArray.forEach((element, index) => {
-                    str += `
+        function update() {
+            if (localStorage.getItem('itemsJson') == null) {
+                itemJsonArray = [];
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+            } else {
+                itemJsonArrayStr = localStorage.getItem('itemsJson')
+                itemJsonArray = JSON.parse(itemJsonArrayStr);
+            }
+            // Populate the table
+            let tableBody = document.getElementById("tableBody");
+            let str = "";
+            itemJsonArray.forEach((element, index) => {
+                str += `
                     <tr>
                     <th scope="row">${index + 1}</th>
                     <td>${element[0]}</td>
@@ -254,33 +256,34 @@
                     <td>${element[3]}</td> 
                     <td>${element[4]}</td> 
                     <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td> 
-                    </tr>`; 
-                });
-                tableBody.innerHTML = str;
-            }
-            
-                add = document.getElementById("add");
-                add.addEventListener("click", getAndUpdate);
-                update();
-                function deleted(itemIndex){
-                console.log("Delete", itemIndex);
-                itemJsonArrayStr = localStorage.getItem('itemsJson')
-                itemJsonArray = JSON.parse(itemJsonArrayStr);
-                // Delete itemIndex element from the array
-                itemJsonArray.splice(itemIndex, 1);
-                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
-                update();
-            }
-            
-        
-            function clearStorage(){
-                if (confirm("Do you areally want to clear?")){
+                    </tr>`;
+            });
+            tableBody.innerHTML = str;
+        }
+
+        add = document.getElementById("add");
+        add.addEventListener("click", getAndUpdate);
+        update();
+
+        function deleted(itemIndex) {
+            console.log("Delete", itemIndex);
+            itemJsonArrayStr = localStorage.getItem('itemsJson')
+            itemJsonArray = JSON.parse(itemJsonArrayStr);
+            // Delete itemIndex element from the array
+            itemJsonArray.splice(itemIndex, 1);
+            localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
+            update();
+        }
+
+
+        function clearStorage() {
+            if (confirm("Do you areally want to clear?")) {
                 console.log('Clearing the storage')
                 localStorage.clear();
                 update()
-                }
             }
-        </script>
+        }
+    </script>
 </body>
 
 </html>
