@@ -23,7 +23,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto justify-content-center">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="dashboard.html">Home
                         <!-- <span class="sr-only">(current)</span> -->
                     </a>
@@ -57,7 +57,7 @@
                 <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false" style="color:rgb(0, 0, 0); font-size: 25px;" href="#">
                   Dashboard
                 </a>
-                <div class="dropdown-menu" style="background-color: #A7FFF9;">
+                <div class="dropdown-menu" style="background-color: #c6faf8;">
                     <a class="dropdown-item" href="todo.html">Your profile</a>
                     <a class="dropdown-item" href="feestracker.html">Products overview</a>
                     <div class="dropdown-divider"></div>
@@ -67,8 +67,8 @@
                     <a class="dropdown-item" href="#">Help and support</a>
                     <a class="dropdown-item" href="#">Give feedback</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Sign out</a>
                     <br><br>
+                    <a class="dropdown-item" href="#">Sign out</a>
                     <p class="dropdown-item" ><a href="#" style="color:rgb(24, 24, 200)">Privacy policies</a> &copy;SD Track 2022</p>
                     </div>
               </div>
@@ -81,9 +81,13 @@
         <div class="container">
             <div class="row">
                 
-    <div class="col-lg-5">
+    <div class="glow col-lg-4">
         <h2 class="text-center"><u>Fees Tracker</u></h2>
          <div class="my-5">
+            <div class="form-group">
+                <label for="title">Code</label>
+                <input type="number" class="form-control" id="unicode" aria-describedby="emailHelp">
+            </div>
             <div class="form-group">
                 <label for="title">Name</label>
                 <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
@@ -110,8 +114,8 @@
 
         
     </div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-6">
+    <div class="glow col-lg-2"></div>
+    <div class="glow col-lg-6">
         <div id="items">
             <h2><u>Fees Paid By : -</u></h2>
             <br>
@@ -119,6 +123,7 @@
                 <thead>
                   <tr>
                     <th scope="col">Sl.No</th>
+                    <th scope="col">Code</th>
                     <th scope="col">Name</th>
                     <th scope="col">Date</th>
                     <th scope="col">Amount</th>
@@ -129,6 +134,7 @@
                 <tbody id="tableBody">
                   <tr>
                     <th scope="row">1</th>
+                    <td>SD</td>
                     <td>SD</td>
                     <td>SD</td>
                     <td>SD</td>
@@ -145,19 +151,49 @@
 </main>
 
 <footer style="background-color:rgb(28, 42, 37);">
-    <div class="container p-3" style=" color:aliceblue;">
-        <h5>SD Track</h5>
-        <p>It is all in one solution website for the teachers and the students to track their todo list, fees,
-            scorecard. Also it is a learning community where teachers and students can interact with each other
-            conviniently.</p>
-        <h6>Follow us on</h6>
-        <a href="#"><img src="download.png" alt="" style="width:44px"></a>
-        <a href="#"><img src="download (2).jpg" alt="" style="width:44px"></a>
-        <a href="#"><img src="download (1).png" alt="" style="width:30px"></a>
-        <br><br>
-        <p>&copy;SD Track 2022</p>
+    <div class="mx-5 py-5" style=" color:aliceblue;">
+      <div class="row">
+        <div class="col-lg-6">
+          <h5 style="font-size: 35px;">SD Track</h5>
+      <p>It is all in one solution website for the teachers and the students to track their todo list, fees, scorecard. Also it is a learning community where teachers and students can interact with each other conviniently.</p>
+      <h6>Follow us on</h6>
+      <a href="#"><img src="download.png" alt="" style="width:44px"></a>
+      <a href="#"><img src="download (2).jpg" alt="" style="width:44px"></a>
+      <a href="#"><img src="download (1).png" alt="" style="width:30px"></a>
+      
+        </div>
+        <div class="glow col-lg-6">
+          <div class="row">
+            <div class="glow col-lg-4">
+              <h6 style="font-size: 25px;">Products</h6>
+              <br>
+              <p><a href="#" style="color: white;">To Do List</a></p>
+              <p><a href="#" style="color: white;">Fees tracker</a></p>
+              <p><a href="#" style="color: white;">Community</a></p>
+            </div>
+            <div class="glow col-lg-4">
+              <h6 style="font-size: 25px;">Company</h6>
+              <br>
+              <p><a href="#" style="color: white;">About us</a></p>
+              <p><a href="#" style="color: white;">Contact us</a></p>
+              <p><a href="#" style="color: white;">Blogs</a></p>
+              <p><a href="#" style="color: white;">FAQs</a></p>
+            </div>
+            <div class="glow col-lg-4">
+              <h6 style="font-size: 25px;">Legal</h6>
+              <br>
+              <p><a href="#" style="color: white;">Disclaimer</a></p>
+              <p><a href="#" style="color: white;">Privacy policies</a></p>
+              <p><a href="#" style="color: white;">Terms and conditions</a></p>
+            </div>
+          </div>
+        </div>
+      
     </div>
-</footer>
+    <br><br>
+    <hr>
+      <p style="text-align: center;">&copy;SD Track 2022. All rights reserved.</p>
+  </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -175,6 +211,8 @@
         <script>
             function getAndUpdate(){
                 console.log("Updating List...");
+                
+                uni = document.getElementById('unicode').value;
                 tit = document.getElementById('title').value;
                 desc = document.getElementById('description').value;
                 date = document.getElementById('date').value;
@@ -182,13 +220,13 @@
                 
                 if (localStorage.getItem('itemsJson')==null){
                     itemJsonArray = [];
-                    itemJsonArray.push([tit, date, amount, desc]);
+                    itemJsonArray.push([uni, tit, date, amount, desc]);
                     localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
                 }
                 else{
                     itemJsonArrayStr = localStorage.getItem('itemsJson')
                     itemJsonArray = JSON.parse(itemJsonArrayStr);
-                    itemJsonArray.push([tit, date, amount, desc]);
+                    itemJsonArray.push([uni, tit, date, amount, desc]);
                     localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
                 }
                 update();
@@ -214,6 +252,7 @@
                     <td>${element[1]}</td> 
                     <td>${element[2]}</td> 
                     <td>${element[3]}</td> 
+                    <td>${element[4]}</td> 
                     <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td> 
                     </tr>`; 
                 });
